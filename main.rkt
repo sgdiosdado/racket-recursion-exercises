@@ -8,7 +8,7 @@
   (cond
     [(<= n 3) (> n 1)]
     [(zero? (modulo n i)) #f]
-    [(> n (* i i)) #t]
+    [(< n (* i i)) #t]
     [else (primo? n (+ i 1))]
       )
   )
